@@ -15,8 +15,7 @@ public class Services {
 	}
 	
 	public void addToAccountList(Account account) {
-		accountList.put(counter, account);
-		counter++;
+		accountList.put(counter++, account);
 	}
 	
 	public Account getAccount(int i) {
