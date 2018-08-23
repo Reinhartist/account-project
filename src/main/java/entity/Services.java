@@ -30,9 +30,7 @@ public class Services {
 	@Override
 	public String toString() {
 		StringBuilder s = new StringBuilder();
-		for(int i = 1; i < counter; i++) {
-			s.append(i + " " + accountList.get(i).toString() + "\n");
-		}
+		accountList.forEach((k,v) -> s.append(k + " " + v.toString() + "\n"));
 		return s.toString();
 	}
 }
