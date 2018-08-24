@@ -16,6 +16,6 @@ public class servicesTest extends TestCase {
         list.addToAccountList(jordan);
         list.addToAccountList(navani);
         list.addToAccountList(ash);
-        assertEquals(list.countByFirstName(), 3);
+        assertEquals(list.countByFirstName("Jordan"), 1);
 	}
 }

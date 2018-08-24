@@ -34,4 +34,7 @@ public class Services {
 		return s.toString();
 	}
 
+	public long countByFirstName(String name) {
+		return accountList.values().stream().filter(v -> v.getFirstName().equals(name)).count();
+	}
 }
