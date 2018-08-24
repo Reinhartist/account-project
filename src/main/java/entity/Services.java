@@ -26,10 +26,12 @@ public class Services {
 		return (new GsonBuilder()).setPrettyPrinting().create().toJson(accountList);
 	}
 	
+
 	@Override
 	public String toString() {
 		StringBuilder s = new StringBuilder();
-		accountList.forEach((k,v) -> s.append(k + " " + v.toString() + "\n"));
+		accountList.forEach((k, v) -> s.append(k + " " + v.toString() + "\n"));
 		return s.toString();
 	}
+
 }
