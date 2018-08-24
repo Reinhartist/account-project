@@ -1,12 +1,13 @@
 package com.qa.account_application;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 import entity.Account;
 import entity.Services;
-import junit.framework.TestCase;
 
-public class servicesTest extends TestCase {
+public class servicesTest {
 	@Test
 	public void testServicesCountByFirstName() {
         Services list = new Services();
